@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Descubriendo Argentina</title>
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body class="bodyRegistro">
+        <header class="header">
+            <nav class="nav">
+                <ul class="ul">
+                    <li class="logo">
+                        <a href="../index.html">  
+                            <img class="img" src="../assets/img/logo.png" alt="valijas">
+                        </a>
+                    </li>
+                </ul>    
+            </nav>
+        </header>
+        <main class="mainRegistro">
+           <section class="sectionRegistro">
+             <h1>Registro</h1>
+             <form class="formRegistro">
+                <div>
+                    <input class="input" type="text" name="nombre" id="nombre" placeholder="Nombre" required> 
+                </div>
+                <div>
+                    <input class="input" type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                </div>
+                <div>
+                    <input class="input" type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <input class="input" type="password" name="password" id="password" placeholder="Contraseña" required>
+                </div>
+                <div>
+                    <label for="nacimiento">Fecha de Nacimiento:</label>
+                    <input class="input" type="date" name="nacimiento" id="nacimiento" required>
+                </div>
+                <div>
+                    <select class="select" name="pais" id="pais">
+                        <option value="AR">Argentina</option>
+                        <option value="PE">Peru</option>
+                        <option value="MX">Mexico</option>
+                        <option value="CL">Chile</option>
+                    </select>
+                </div>
+                <div class="terminos">
+                    <input type="checkbox" name="termino" id="termino">
+                    <label for="termino">Acepta términos y condiciones</label>
+                </div>
+                <div>
+                    <input class="submit" type="submit" value="Registrarse">
+                </div>
+            </form>
+         </section>
+        </main>
+    </body>
+</html>
