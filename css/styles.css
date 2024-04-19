@@ -26,8 +26,20 @@ h1{
     font-size: 3rem;
 }
 
+@media only screen and (max-width:600px){
+    h1{
+        font-size: 2rem;
+    }
+}
+
 h2{
     font-size: 2rem;
+}
+
+@media only screen and (max-width:600px){
+    h2{
+        font-size: 1.5rem;
+    }
 }
 
 a{
@@ -72,6 +84,35 @@ ul{
     }
 }
 
+@media only screen and (max-width:600px){
+    .header{
+        position: inherit;
+        height: initial;
+        .nav{
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 10px;
+            .ul{
+                flex-direction: column;
+                align-items: flex-start;
+                .logo{
+                    margin-top: 10px;
+                }
+                .li{
+                    display: inline-block;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    .a{
+                        display: inline-block;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
 /* ---------- Sección principal ---------- */
 
 .sectionPres{
@@ -84,6 +125,9 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    h2{
+        text-align: center;
+    }
     .a{
         font-size: 1.2rem;
         color: white;
@@ -122,6 +166,20 @@ ul{
         border: 2px solid white;
         font-size: 1.2rem;
     }
+}
+
+@media only screen and (max-width:600px){
+     .sectionBusq{
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 10px;
+            input{
+                width: 100%;
+            }
+        }
+     }
 }
 
 /* ---------- Sección destacados ---------- */
@@ -209,6 +267,9 @@ ul{
     align-items: center;
     height: 40vh;
     background-color: var(--dark-color);
+    h4{
+        text-align: center;
+    }
     .ul{
         justify-content: space-evenly;
         font-size: 1.2rem;
@@ -218,10 +279,17 @@ ul{
     }
 }
 
+@media only screen and (max-width:600px){
+    .footer{
+        .ul{
+            flex-direction: column;
+        }
+    }
+}
+
 /* ---------- Descripción ---------- */
 
 .sectionDesc, .sectionVideo{
-    height: 85vh;
     padding: 40px;
     display: flex;
     gap: 40px;
@@ -257,8 +325,18 @@ ul{
 }
 
 .sectionVideo{
-    iframe{
-        border-radius: 0 15px 15px;
+    .text{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        column-gap: 40px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .sectionDesc, .sectionVideo{
+        flex-direction: column;
     }
 }
 
@@ -266,6 +344,10 @@ ul{
 
 .bodyRegistro{
     background: linear-gradient(#ffffff83,#ffffff83), url(./../assets/img/img3.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     .mainRegistro{
         display: flex;
         justify-content: center;
@@ -319,10 +401,31 @@ ul{
     }
 }
 
+@media only screen and (max-width:1023px) and (min-width:768px){
+    .bodyRegistro{
+        .sectionRegistro{
+            width: 60%;
+        }
+    }
+}
+
+@media only screen and (max-width:767px){
+    .bodyRegistro{
+        .sectionRegistro{
+            width: 80%;
+        }
+    }
+}
+
+
 /* ---------- Login ---------- */
 
 .bodyLogin{
     background: linear-gradient(#ffffff83,#ffffff83), url(./../assets/img/img3.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     .mainLogin{
         display: flex;
         justify-content: center;
@@ -364,6 +467,22 @@ ul{
                 font-size: 1rem;
                 margin-top: 20px;
             }
+        }
+    }
+}
+
+@media only screen and (max-width:1023px) and (min-width:768px){
+    .bodyLogin{
+        .sectionLogin{
+            width: 60%;
+        }
+    }
+}
+
+@media only screen and (max-width:767px){
+    .bodyLogin{
+        .sectionLogin{
+            width: 80%;
         }
     }
 }
