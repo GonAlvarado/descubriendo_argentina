@@ -268,6 +268,18 @@ ul{
     }
 }
 
+@media only screen and (max-width:600px){
+    .sectionDest{
+        .galeria{
+            .img{
+                img{
+                    filter: initial;
+                }
+            }
+        }
+    }
+}
+
 /* ---------- Sección elegidos ---------- */
 
 .sectionEleg{
@@ -289,7 +301,7 @@ ul{
                 height: 100%;
                 width: 100%;
                 background-size: cover;
-                border-radius: 0 0 40px 0;
+                border-radius: 0 0 0 40px;
                 transition: all .1s;
                 &:hover{
                     transform: scale(1.1);
@@ -334,6 +346,7 @@ ul{
     .footer{
         .ul{
             flex-direction: column;
+            row-gap: 20px;
         }
     }
 }
@@ -454,15 +467,15 @@ ul{
     }
 }
 
-@media only screen and (max-width:1023px) and (min-width:768px){
+/*@media only screen and (max-width:1023px) and (min-width:768px){
     .bodyRegistro{
         .sectionRegistro{
             width: 60%;
         }
     }
-}
+}*/
 
-@media only screen and (max-width:767px){
+@media only screen and (max-width:600px){
     .bodyRegistro{
         .sectionRegistro{
             width: 80%;
@@ -527,15 +540,15 @@ ul{
     }
 }
 
-@media only screen and (max-width:1023px) and (min-width:768px){
+/*@media only screen and (max-width:1023px) and (min-width:768px){
     .bodyLogin{
         .sectionLogin{
             width: 60%;
         }
     }
-}
+}*/
 
-@media only screen and (max-width:767px){
+@media only screen and (max-width:600px){
     .bodyLogin{
         .sectionLogin{
             width: 80%;
