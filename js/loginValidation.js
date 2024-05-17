@@ -44,6 +44,7 @@ const validarCampos = () => {
 
     if (isValid) {
         alert("¡Bienvenido!");
+        location.href = './../index.html'
     }
 
 };

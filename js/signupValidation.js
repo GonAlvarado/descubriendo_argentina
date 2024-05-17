@@ -73,6 +73,7 @@ const validarCampos = () => {
 
     if (isValid) {
         alert("¡Usuario registrado!");
+        location.href = './../pages/login.html'
     }
 
 };
