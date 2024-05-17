@@ -28,6 +28,24 @@
                 </ul>    
             </nav>
         </header>
+        <div id="clima">
+            <ul class="ul">
+                <li>
+                    <span>
+                        <select class="select" name="city" id="ciudad" onchange="mostrarCiudad()">
+                            <option value="Buenos Aires">Buenos Aires</option>
+                            <option value="Ushuaia">Ushuaia</option>
+                            <option value="Cordoba">Cordoba</option>
+                            <option value="Mendoza">Mendoza</option>
+                        </select>
+                    </span>
+                </li>
+                <li><span id="temperature"></span> °C</li>
+                <li class="textIcon"><span id="weather"></span> <img id="weatherIcon" src="" alt=""></li>
+                <li><span>Humedad</span> <span id="humidity"></span>%</li>
+                <li><span>Viento</span> <span id="windSpeed"></span> m/s</li>
+            </ul>
+        </div>
         <main>
             <section id="presentacion" class="sectionPres">
                 <h1>Descubriendo Argentina</h1>
@@ -167,6 +185,7 @@
                 <li><a class="a" href="#presentacion"><img class="arriba" src="assets/img/arriba.png" alt=""></a></li>
             </ul>
             <h4>Descubriendo Argentina - Todos los derechos reservados</h4>
-        </footer>   
+        </footer>
+        <script src="./js/scripts.js"></script>   
     </body>
 </html>

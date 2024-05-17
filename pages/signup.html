@@ -22,22 +22,27 @@
         <main class="mainRegistro">
            <section class="sectionRegistro">
              <h1>Registro</h1>
-             <form class="formRegistro">
+             <form id="signupForm" class="formRegistro">
                 <div>
-                    <input class="input" type="text" name="nombre" id="nombre" placeholder="Nombre" required> 
+                    <input class="input" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    <div id="firsnameError" class="error-message"></div>
                 </div>
                 <div>
                     <input class="input" type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                    <div id="lastnameError" class="error-message"></div>
                 </div>
                 <div>
                     <input class="input" type="email" name="email" id="email" placeholder="Email" required>
+                    <div id="emailError" class="error-message"></div>
                 </div>
                 <div>
                     <input class="input" type="password" name="password" id="password" placeholder="Contraseña" required>
+                    <div id="passwordError" class="error-message"></div>
                 </div>
                 <div>
                     <label for="nacimiento">Fecha de Nacimiento:</label>
                     <input class="input" type="date" name="nacimiento" id="nacimiento" required>
+                    <div id="birthdayError" class="error-message"></div>
                 </div>
                 <div>
                     <select class="select" name="pais" id="pais">
@@ -57,5 +62,6 @@
             </form>
          </section>
         </main>
+        <script src="../js/signupValidation.js"></script>
     </body>
 </html>

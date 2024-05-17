@@ -22,18 +22,21 @@
         <main class="mainLogin">
             <section class="sectionLogin">
                 <h1>Inicio de sesión</h1>
-                <form class="formLogin">
+                <form id="loginForm" class="formLogin">
                     <div>
                         <input class="input" type="email" id="email" name="email" placeholder="Email">
+                        <div id="emailError" class="error-message"></div>
                     </div>
                     <div>
                         <input class="input" type="password" id="password" name="password" placeholder="Contraseña">
+                        <div id="passwordError" class="error-message"></div>
                     </div>
                     <div>
                         <input class="submit" type="submit" value="Iniciar sesión">
                     </div>
                 </form>
             </section>
-        </main>  
+        </main> 
+        <script src="../js/loginValidation.js"></script> 
     </body>
 </html>

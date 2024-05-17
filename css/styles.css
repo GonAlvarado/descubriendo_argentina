@@ -555,3 +555,74 @@ ul{
         }
     }
 }
+
+.error-message {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.bodyRegistro{
+    .sectionRegistro{
+        .formRegistro{
+            .is-valid{
+                border-radius: 10px;
+                border-left: 10px solid green;
+            }
+        }
+    }
+}
+
+.bodyRegistro{
+    .sectionRegistro{
+        .formRegistro{
+            .is-invalid{
+                border-radius: 10px;
+                border-left: 10px solid red;
+            }
+        }
+    }
+}
+
+.bodyLogin{
+    .sectionLogin{
+        .formLogin{
+            .is-valid{
+                border-radius: 10px;
+                border-left: 10px solid green;
+            }
+        }
+    }
+}
+
+.bodyLogin{
+    .sectionLogin{
+        .formLogin{
+            .is-invalid{
+                border-radius: 10px;
+                border-left: 10px solid red;
+            }
+        }
+    }
+}
+
+#clima{
+    width: 100%;
+    background-color: var();
+    font-size: 1.2rem;
+    .ul{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width:600px){
+    #clima{
+        display: none;
+    }
+}
+
+.textIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
