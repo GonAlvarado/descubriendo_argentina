@@ -244,6 +244,12 @@ ul{
             margin-top: 10px;
             color: #F57C00;
         }
+        p{
+            height:200px;
+            width:300px;
+            text-align: justify;
+            overflow: auto;
+        }
     }
     .subtitulo{
             padding: 40px;
@@ -291,7 +297,7 @@ ul{
         display: flex;
         overflow-x: scroll;
         overflow-y: hidden;
-        padding: 20px 0;
+        padding: 50px 0;
         gap: 40px;
         .img{
             height: 150px;
@@ -307,6 +313,12 @@ ul{
                     transform: scale(1.1);
                 }
             }
+        }
+        .elegi{
+            color: #6699CC;
+            font-weight:600 ;
+            display: flex;
+            justify-content: center;
         }
     }
 }
