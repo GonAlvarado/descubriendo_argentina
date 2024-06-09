@@ -126,6 +126,45 @@ ul{
     }
 }
 
+/* ---------- pagina adm ---------- */
+
+.adm{
+    h1{
+        font-size: 2rem;
+        padding: 20px;
+    }
+    min-height: 100vh;
+    background: linear-gradient(151deg,#9f9c9c 0%, #f3e9d1 80%);
+        .formA{
+        margin-left: 10vw;
+        margin-right: 10vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap:16px;
+        input{
+            border-radius: 5px;
+            }              
+             
+        .desti{
+            grid-column-start: span 2;
+                    
+        }
+        .prov{
+            grid-column-start: span 2;
+        }
+        .desc{
+            grid-column-start: span 4;
+        }
+        .foto{
+            grid-column-start: span 4;
+        }
+        
+        }
+    }
+   
+
+
+
 /* ---------- Sección principal ---------- */
 
 .sectionPres{

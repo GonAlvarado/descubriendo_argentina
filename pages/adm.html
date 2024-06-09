@@ -13,7 +13,7 @@
             <nav class="nav">
                 <ul class="ul">
                     <li class="logo">
-                        <a href="#">  
+                        <a href="../index.html">  
                             <img class="img" src="../assets/img/logo.png" alt="valijas">
                         </a>
                     </li>
@@ -31,8 +31,36 @@
         </header>
 
 
-    <main>
+    <main class="adm">
         <section class="tabla">
+            <h1>Tabla de Destinos</h1>
+            <form class="formA" id="formA" action="" method="post">    
+                <div class="desti">
+                    <label for="destino">Destino</label>
+                    <input type="text" id="Destino" name="Destino" placeholder="Cataratas del Iguazú"   required>
+                </div>
+
+                <div class="prov">
+                    <label for="provincia">Provincia</label>
+                    <input type="text" id="provincia" name="provincia" placeholder="Misiones"   required>
+                </div>
+
+                <div class="desc">
+                    <label for="descripcion">Descripcion</label>
+                    <textarea class="descripcion" name="descripcion" id="descripcion"   rows="15" placeholder="Descripción del destino elegido..."></textarea>
+                </div>
+
+                <div class="foto">
+                    <label for="imagen">Foto del destino</label>
+                    <input type="image" id="img" name="Foto del destino" placeholder="elegir un archivo">
+                </div>
+
+                <div class="agregar">
+                <button class="input">
+                    <input class="submitL"   type="submit" value="Agregar">
+                 </button>
+                </div>
+
 
 
         </section>
