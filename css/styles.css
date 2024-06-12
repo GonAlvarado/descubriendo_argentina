@@ -132,33 +132,68 @@ ul{
     h1{
         font-size: 2rem;
         padding: 20px;
+        text-align: center;
     }
     min-height: 100vh;
     background: linear-gradient(151deg,#9f9c9c 0%, #f3e9d1 80%);
         .formA{
-        margin-left: 10vw;
-        margin-right: 10vw;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap:16px;
-        input{
-            border-radius: 5px;
-            }              
-             
-        .desti{
-            grid-column-start: span 2;
-                    
+        margin-left: 20vw;
+        margin-right: 20vw;
+        background: linear-gradient(156deg,#5e7276 0%, #886333 80%);
+        border-radius: 15px;
+        border: #9f9c9c;
+        border-style: solid;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 2%;
+        div{
+            input, textarea{
+                display: block;
+                margin: 0 auto;
+                width: 80%;
+                border:none;
+                border-bottom: #9f9c9c;
+            }
+            input{
+                height:5vh;
+            }
+            label{
+                text-shadow: #9f9c9c;
+                font-weight: 600;
+                margin-left: 10%;
+            }
+
+            button{
+                width: 10vw;
+                margin: 2%;
+                padding: 0.5%;
+                border: #9f9c9c;
+                border-style: outset;
+                border-radius: 15px;
+                margin-left: 70%;
+            }
+
         }
-        .prov{
-            grid-column-start: span 2;
+          
         }
-        .desc{
-            grid-column-start: span 4;
-        }
-        .foto{
-            grid-column-start: span 4;
-        }
-        
+    }
+    @media screen and (max-width: 600px){
+        .adm{
+            .formA{
+                margin-left: 2vw;
+                margin-right: 2vw;
+                div{
+                button{                    
+                    width: 30vw;
+                    padding: 0.5%;
+                    border: #9f9c9c;
+                    border-style: outset;
+                    border-radius: 15px;
+                    margin-left: 50%;
+                }
+            }
+            }
         }
     }
    
