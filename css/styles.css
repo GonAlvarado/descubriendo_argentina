@@ -468,6 +468,7 @@ ul{
     }
     .elegidos{
         display: flex;
+        justify-content: space-between;
         overflow-x: scroll;
         overflow-y: hidden;
         padding: 50px 0;
