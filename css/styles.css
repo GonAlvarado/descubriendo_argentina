@@ -139,7 +139,6 @@ ul{
         padding: 20px;
         text-align: center;
     }
-    min-height: 100vh;
     
         .formA{
         margin-left: 20vw;
@@ -207,21 +206,24 @@ ul{
                 margin-left: 2vw;
                 margin-right: 2vw;
                 div{
-                button{                    
-                    width: 30vw;
-                    padding: 0.5%;
-                    border: #9f9c9c;
-                    border-style: outset;
-                    border-radius: 15px;
-                    margin-left: 50%;
-                    background-color:#aa791d91;
-                    font-weight: 400;
-                    color: #fdfbfb;
-                    &:hover{
-                        cursor: pointer;
-                        background-color:#f8ce15d7;
-                        font-weight: 500;
-                        color:black
+                button{    
+                    background-color: #5e727600;
+                    border: none;
+                    input{               
+                        width: 30vw;
+                        padding: 0.5%;
+                        border: #9f9c9c;
+                        border-style: outset;
+                        border-radius: 15px;
+                        margin-left: 50%;
+                        background-color:#aa791d91;
+                        font-weight: 400;
+                        color: #fdfbfb;
+                        &:hover{
+                            cursor: pointer;
+                            background-color:#f8ce15d7;
+                            font-weight: 500;
+                            color:black
 
                         }
                     }
@@ -229,6 +231,7 @@ ul{
             }
         }
     }
+}
    
     .listado{
         h1{
@@ -298,7 +301,32 @@ ul{
         }
 
     }
-
+    @media screen and (max-width: 600px){
+        .listado{
+            .tabla{
+                margin-left: 2vw;
+                margin-right: 2vw;
+                table{
+                    padding: 2%;
+                    thead{
+                        justify-content: space-evenly;
+                        th{
+                            padding: 2px;
+                            font-size: .6rem;
+                        }
+                    }   
+                    tbody{
+                        tr{
+                            td{
+                                font-size: 0.6rem;
+                            }
+                        }    
+                    }
+                }                
+            }
+        }
+    }
+    
 /* ---------- Sección principal ---------- */
 
 .sectionPres{
