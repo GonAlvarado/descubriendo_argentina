@@ -31,8 +31,8 @@
         </header>
 
 
-    <main class="adm">
-        <section class="tabla">
+    <main class="admin">
+        <section class="adm">
             <h1>Tabla de Destinos</h1>
             <form class="formA" id="formA" action="" method="post">    
                 <div class="desti">
@@ -61,12 +61,47 @@
                     <input class="submitL"   type="submit" value="Agregar">
                  </button>
                 </div>
-
-
-
         </section>
 
-        <section class="botones">
+        <section class="listado">
+            <h1>Listado de Destinos</h1>
+            <h2>Seleccione uno y presione el boton modificar para ver los detalles</h2>
+            <div  class="tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Destino</th>
+                            <th>Provincia</th>
+                            <th>Imagen</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>La Boca</td>
+                            <td>Buenos Aires</td>
+                            <td>
+                               <img src="../assets/img/laboca.jpg" alt="">
+                            </td>
+                            <td>
+                                <button class="mod">Modificar</button>
+                                <button class="elim">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cachi</td>
+                            <td>Salta</td>
+                            <td>
+                                <img src="../assets/img/cachisalta.jpg" alt="">
+                            </td>
+                            <td>
+                                <button class="mod">Modificar</button>
+                                <button class="elim">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
 
 

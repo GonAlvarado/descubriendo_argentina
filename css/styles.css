@@ -128,6 +128,11 @@ ul{
 
 /* ---------- pagina adm ---------- */
 
+.admin{
+    background: linear-gradient(151deg,#9f9c9c 0%, #f3e9d1 80%);
+    padding-bottom: 10vh;
+}
+
 .adm{
     h1{
         font-size: 2rem;
@@ -135,7 +140,7 @@ ul{
         text-align: center;
     }
     min-height: 100vh;
-    background: linear-gradient(151deg,#9f9c9c 0%, #f3e9d1 80%);
+    
         .formA{
         margin-left: 20vw;
         margin-right: 20vw;
@@ -165,19 +170,37 @@ ul{
             }
 
             button{
+                background-color: #5e727600;
+                border: none;
+                
+
+
+                input{               
                 width: 10vw;
-                margin: 2%;
+                margin: 10%;
                 padding: 0.5%;
                 border: #9f9c9c;
                 border-style: outset;
                 border-radius: 15px;
-                margin-left: 70%;
-            }
-
-        }
-          
+                background-color:#aa791d91;
+                font-weight: 400;
+                color: #fdfbfb;
+                
+                
+                &:hover{
+                    cursor: pointer;
+                    background-color:#f8ce15d7;
+                    font-weight: 500;
+                    color:black
+                    }
+                } 
+            }   
+                    
         }
     }
+
+}
+ 
     @media screen and (max-width: 600px){
         .adm{
             .formA{
@@ -191,14 +214,90 @@ ul{
                     border-style: outset;
                     border-radius: 15px;
                     margin-left: 50%;
+                    background-color:#aa791d91;
+                    font-weight: 400;
+                    color: #fdfbfb;
+                    &:hover{
+                        cursor: pointer;
+                        background-color:#f8ce15d7;
+                        font-weight: 500;
+                        color:black
+
+                        }
+                    }
                 }
-            }
             }
         }
     }
    
+    .listado{
+        h1{
+            font-size: 2rem;
+            padding: 20px;
+            text-align: center;
+        }
+        h2{
+            font-size: 1rem;
+            padding: 10px;
+            text-align: center;
+        }
+        .tabla{
+            margin-left: 20vw;
+            margin-right: 20vw;
+            background: linear-gradient(156deg,#5e7276 0%, #886333 80%);
+            border-radius: 15px;
+            border: #9f9c9c;
+            border-style: solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            table-layout: fixed;
+            border-collapse: collapse;
+            table{
+                width: 100%;
+                padding: 2%;
+                thead{
+                    background: linear-gradient(156deg,#6c787a 0%, #cca066a1 80%);
+                    th{
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        padding: 10px;
+                    }
+                }
+                tbody{
+                    td{
+                        padding: 10px;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        border-bottom: solid;
+                        border-color: #66450891;
+                        color:#fdfbfb;
+                        img{
+                            width: 100px;
+                            height: 100px;
+                            overflow: hidden;
+                        }
+                        button{
+                            border-radius: 10px;
+                            padding: 5px;
+                            background-color:#aa791d91;
+                            font-weight: 400;
+                            color: #fdfbfb;
+                            &:hover{
+                                cursor: pointer;
+                                background-color:#f8ce15d7;
+                                font-weight: 500;
+                                color:black
 
+                            }
+                        }
+                    }
+                }
+            } 
+        }
 
+    }
 
 /* ---------- Sección principal ---------- */
 
