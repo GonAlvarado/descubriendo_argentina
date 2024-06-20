@@ -31,97 +31,91 @@
         </header>
 
 
-    <main class="admin">
-        <section class="adm">
-            <h1>Tabla de Destinos</h1>
-            <form class="formA" id="formA" action="" method="post">    
-                <div class="desti">
-                    <label for="destino">Destino</label>
-                    <input type="text" id="Destino" name="Destino" placeholder="Cataratas del Iguazú"   required>
+        <main class="admin">
+            <section class="adm">
+                <h1>Tabla de Destinos</h1>
+                <form class="formA" id="formA" action="" method="post">    
+                    <div class="desti">
+                        <label for="destino">Destino</label>
+                        <input type="text" id="Destino" name="Destino" placeholder="Cataratas del Iguazú"   required>
+                    </div>
+
+                    <div class="prov">
+                        <label  for="provincia">Provincia</label>
+                        <input type="text" id="provincia" name="provincia" placeholder="Misiones"   required>
+                    </div>
+
+                    <div class="desc">
+                        <label  for="descripcion">Descripcion</label>
+                        <textarea class="descripcion" name="descripcion" id="descripcion"   rows="15" placeholder="Descripción del destino elegido..."></textarea>
+                    </div>
+
+                    <div class="foto">
+                        <label  for="imagen">Foto del destino</label>
+                        <input type="text" id="img" name="Foto del destino" placeholder="elegir un archivo">
+                        <!-- type="image" -->
+                    </div>
+
+                    <div class="agregar">
+                        <button class="input">
+                        <input class="submitL"   type="submit" value="Agregar">
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="listado">
+                <h1>Listado de Destinos</h1>
+                <h2>Seleccione uno y presione el boton modificar para ver los detalles</h2>
+                <div  class="tabla">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Destino</th>
+                                <th>Provincia</th>
+                                <th>Imagen</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>La Boca</td>
+                                <td>Buenos Aires</td>
+                                <td>
+                                    <img src="../assets/img/laboca.jpg" alt="">
+                                </td>
+                                <td>
+                                    <button class="mod">Modificar</button>
+                                    <button class="elim">Eliminar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Cachi</td>
+                                <td>Salta</td>
+                                <td>
+                                    <img src="../assets/img/cachisalta.jpg" alt="">
+                                </td>
+                                <td>
+                                    <button class="mod">Modificar</button>
+                                    <button class="elim">Eliminar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-
-                <div class="prov">
-                    <label  for="provincia">Provincia</label>
-                    <input type="text" id="provincia" name="provincia" placeholder="Misiones"   required>
-                </div>
-
-                <div class="desc">
-                    <label  for="descripcion">Descripcion</label>
-                    <textarea class="descripcion" name="descripcion" id="descripcion"   rows="15" placeholder="Descripción del destino elegido..."></textarea>
-                </div>
-
-                <div class="foto">
-                    <label  for="imagen">Foto del destino</label>
-                    <input type="text" id="img" name="Foto del destino" placeholder="elegir un archivo">
-                    <!-- type="image" -->
-                </div>
-
-                <div class="agregar">
-                <button class="input">
-                    <input class="submitL"   type="submit" value="Agregar">
-                 </button>
-                </div>
-        </section>
-
-        <section class="listado">
-            <h1>Listado de Destinos</h1>
-            <h2>Seleccione uno y presione el boton modificar para ver los detalles</h2>
-            <div  class="tabla">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Destino</th>
-                            <th>Provincia</th>
-                            <th>Imagen</th>
-                            <th>Acciones</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>La Boca</td>
-                            <td>Buenos Aires</td>
-                            <td>
-                               <img src="../assets/img/laboca.jpg" alt="">
-                            </td>
-                            <td>
-                                <button class="mod">Modificar</button>
-                                <button class="elim">Eliminar</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Cachi</td>
-                            <td>Salta</td>
-                            <td>
-                                <img src="../assets/img/cachisalta.jpg" alt="">
-                            </td>
-                            <td>
-                                <button class="mod">Modificar</button>
-                                <button class="elim">Eliminar</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-
-
-        </section>
-
-
-    </main>
+            </section>
+        </main>
     
-
-
-    <footer class="footer">
-        <ul class="ul">
-            <li>Contacto</li>
-            <li>Ayuda</li>
-            <li>Nosotros</li>
-            <li>Administrador</li>
-            <li><a class="a" href="#presentacion"><img class="arriba" src="assets/img/arriba.png" alt=""></a></li>
-        </ul>
-        <h4>Descubriendo Argentina - Todos los derechos reservados</h4>
-    </footer>
-    <script src="./js/scripts.js"></script>   
-</body>
+        <footer class="footer">
+            <ul class="ul">
+                <li>Contacto</li>
+                <li>Ayuda</li>
+                <li>Nosotros</li>
+                <li>Administrador</li>
+                <li><a class="a" href="#presentacion"><img class="arriba" src="assets/img/arriba.png" alt=""></a></li>
+            </ul>
+            <h4>Descubriendo Argentina - Todos los derechos reservados</h4>
+        </footer>
+        <script src="./js/scripts.js"></script>   
+    </body>
 </html>
