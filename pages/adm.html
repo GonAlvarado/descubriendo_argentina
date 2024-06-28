@@ -9,7 +9,7 @@
     </head>
 
     <body >
-        <header class="header">
+        <header class="header" id="arriba">
             <nav class="nav">
                 <ul class="ul">
                     <li class="logo">
@@ -34,31 +34,31 @@
         <main class="admin">
             <section class="adm">
                 <h1>Tabla de Destinos</h1>
-                <form class="formA" id="formA" action="" method="post">    
+                <form class="formA" id="formA" action="" method="post" enctype="multipart/form-data">    
                     <div class="desti">
                         <label for="destino">Destino</label>
-                        <input type="text" id="Destino" name="Destino" placeholder="Cataratas del Iguazú"   required>
+                        <input type="text" id="Destino" name="Destino" placeholder="Cataratas del Iguazú">
                     </div>
 
                     <div class="prov">
                         <label  for="provincia">Provincia</label>
-                        <input type="text" id="provincia" name="provincia" placeholder="Misiones"   required>
+                        <input type="text" id="provincia" name="provincia" placeholder="Misiones">
                     </div>
 
                     <div class="desc">
                         <label  for="descripcion">Descripcion</label>
-                        <textarea class="descripcion" name="descripcion" id="descripcion"   rows="15" placeholder="Descripción del destino elegido..."></textarea>
+                        <textarea class="descripcion" name="descripcion" id="descripcion" rows="15" placeholder="Descripción del destino elegido..."></textarea>
                     </div>
 
                     <div class="foto">
                         <label  for="imagen">Foto del destino</label>
-                        <input type="text" id="img" name="Foto del destino" placeholder="elegir un archivo">
+                        <input type="text" id="img" name="img" placeholder="elegir un archivo">
                         <!-- type="image" -->
                     </div>
 
                     <div class="agregar">
                         <button class="input">
-                        <input class="submitL"   type="submit" value="Agregar">
+                        <input class="submitL" type="submit" value="Agregar">
                         </button>
                     </div>
                 </form>
@@ -112,10 +112,10 @@
                 <li>Ayuda</li>
                 <li>Nosotros</li>
                 <li>Administrador</li>
-                <li><a class="a" href="#presentacion"><img class="arriba" src="assets/img/arriba.png" alt=""></a></li>
+                <li><a class="a" href="#arriba"><img class="arriba" src="../assets/img/arriba.png" alt=""></a></li>
             </ul>
             <h4>Descubriendo Argentina - Todos los derechos reservados</h4>
         </footer>
-        <script src="./js/scripts.js"></script>   
+        <script src="../js/valid_adm.js"></script>   
     </body>
 </html>
