@@ -37,7 +37,7 @@ document.addEventListener('keydown', (evento)=> {
 
         if (campoActual !== -1 && campoActual < formInputs.length - 1) {
             formInputs[campoActual + 1].focus();
-            event.preventDefault();
+            evento.preventDefault();
         }
     }
 });
