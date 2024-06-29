@@ -34,10 +34,10 @@
         <main class="admin">
             <section class="adm">
                 <h1>Tabla de Destinos</h1>
-                <form class="formA" id="formA" action="" method="post" enctype="multipart/form-data">    
+                <form class="formA" id="formA" action="" method="" enctype="multipart/form-data">    
                     <div class="desti">
                         <label for="destino">Destino</label>
-                        <input type="text" id="Destino" name="Destino" placeholder="Cataratas del Iguazú">
+                        <input type="text" id="Destino" name="nombre" placeholder="Cataratas del Iguazú">
                     </div>
 
                     <div class="prov">
@@ -52,13 +52,13 @@
 
                     <div class="foto">
                         <label  for="imagen">Foto del destino</label>
-                        <input type="text" id="img" name="img" placeholder="elegir un archivo">
+                        <input type="text" id="img" name="imagen" placeholder="elegir un archivo">
                         <!-- type="image" -->
                     </div>
 
                     <div class="agregar">
                         <button class="input">
-                        <input class="submitL" type="submit" value="Agregar">
+                        <input id="btnEnviar" class="submitL" type="submit" value="Agregar">
                         </button>
                     </div>
                 </form>
@@ -116,6 +116,7 @@
             </ul>
             <h4>Descubriendo Argentina - Todos los derechos reservados</h4>
         </footer>
-        <script src="../js/scripts.js"></script>
+        <script src="../js/api_destinos.js"></script>
+        <script src="../js/valid_adm.js"></script>
     </body>
 </html>
