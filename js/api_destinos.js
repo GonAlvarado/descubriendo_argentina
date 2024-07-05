@@ -66,23 +66,34 @@ const form = document.querySelector('#formA');
 const btnEnviar = document.querySelector('#btnEnviar');
 
 const obtenerDatos = () => {
-    const datos = new FormData(form);
-    const datosProcesados = Object.fromEntries(datos.entries());
-    form.reset();
     return datosProcesados;
 }
 
 const enviarDatos = async () => {
-    const nuevoDestino = obtenerDatos();
+    const datos = new FormData(form);
+    //const datosProcesados = Object.fromEntries(datos.entries());
+    const nombre = datos.get('nombre');
+    const provincia = datos.get('provincia');
+    const descripcion = datos.get('descripcion');
+    const imagen = datos.get('imagen');
+    const nombreImagen = imagen.name;
+    form.reset();
+    //const nuevoDestino = obtenerDatos();
     try {
         const response = await fetch ('http://127.0.0.1:8080/destinosapi/destinos', {
             method: 'POST',
             headers:{'Content-Type': 'application/json'},
-            body: JSON.stringify(nuevoDestino)
+            body: JSON.stringify({
+                nombre: nombre,
+                provincia: provincia,
+                descripcion: descripcion,
+                imagen: nombreImagen
+            })
         });
         if(response.ok){
             const jsonResponse = await response.json();
             console.log(jsonResponse);
+            location.reload();
         }
     } catch (error) {
         console.log(error);
