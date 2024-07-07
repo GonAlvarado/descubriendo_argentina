@@ -283,14 +283,15 @@ ul{
                         }
                         button{
                             border-radius: 10px;
-                            padding: 5px;
+                            padding: 4px;
+                            margin-left: 2px;
                             background-color:#aa791d91;
                             font-weight: 400;
                             color: #fdfbfb;
                             &:hover{
                                 cursor: pointer;
                                 background-color:#f8ce15d7;
-                                font-weight: 500;
+                                font-weight: 400;
                                 color:black
 
                             }
